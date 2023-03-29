@@ -14,8 +14,16 @@
             int[,] allPoint = getPoint(N,K);
 
             for (int i = 0;i<= N ;i++){
+                
+
                checkIfPass(i,allPoint[i,1],allPoint,allPoint[i,2],allPoint,allPoint[i,3]);
-               if(checkIfPass){
+               if(checkIfPass &&  (countK1 <= K || countK2 <= K)){
+                if(allPoint[i,1] == 1){
+                    countK1++;
+                }else if(allPoint[i,2] == 2){
+                    countK2++;
+                }
+
                 Console.WriteLine(i);
                 }
                }
@@ -37,6 +45,7 @@
                 allPoint[i,3] = point2;
 
              }
+             return allPoint;
 
         }
 

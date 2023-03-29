@@ -15,7 +15,7 @@
             for (int i = 0;i<= N ;i++){
                 
 
-               checkIfPass(i,allPoint[i,1],allPoint,allPoint[i,2],allPoint,allPoint[i,3]);
+               checkIfPass(allPoint[i,1],allPoint[i,2],allPoint[i,3]);
                if(checkIfPass &&  (countK1 <= K || countK2 <= K)){
                 if(allPoint[i,1] == 1){
                     countK1++;
@@ -23,7 +23,7 @@
                     countK2++;
                 }
 
-                Console.WriteLine(i);
+                Console.WriteLine(i,allPoint[i,1]);
                 }
                }
             }

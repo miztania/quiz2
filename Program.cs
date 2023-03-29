@@ -1,10 +1,9 @@
 ﻿namespace quiz2{
     class program{
-        public int countK1 = 0;
-        public int countK2 = 0;
+       
         static void Main(string[] args){
-
-
+            int countK1 = 0;
+            int countK2 = 0;
 
             int N = int.Parse(Console.Read());
             int K = int.Parse(Console.Read());
